@@ -1,0 +1,4 @@
+pyautogui
+faker
+icd10
+Pillow
