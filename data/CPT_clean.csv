@@ -1,0 +1,21 @@
+﻿Code,Description,CodeType,AccountCode,AltCode2,AltCode3,TypeOfService,PlaceOfService,TimeToDoProcedure,ServiceClassification,DefaultModifiers,RevenueCode,DefaultUnits,NationalDrugCode,NDCUnitPrice,NDCUnitOfMeasurement,CodeIDQualifier,PurchaseServiceAmount,CPTDescription,Taxable,HIPAAApproved,RequireCopay,PatientOnlyResponsible,PurchasedService
+99213,Office/outpatient visit est pt,Procedure charge,ACCT001,,,,11,15,A,,0450,1,,,,BQ,0,Established patient visit,Y,Y,N,N,N
+99203,Office/outpatient visit new pt,Procedure charge,ACCT001,,,,11,20,A,,0450,1,,,,BQ,0,New patient visit,Y,Y,N,N,N
+93000,Electrocardiogram complete,Procedure charge,ACCT002,,,,11,10,A,,0730,1,,,,BQ,0,ECG with interpretation,Y,Y,N,N,N
+36415,Routine venipuncture,Procedure charge,ACCT003,,,,11,5,A,,0300,1,,,,BQ,0,Blood draw,Y,Y,N,N,N
+81002,Urinalysis non-automated,Procedure charge,ACCT004,,,,11,5,A,,0300,1,,,,BQ,0,UA dipstick,Y,Y,N,N,N
+71046,Chest X-ray 2 views,Procedure charge,ACCT005,,,,11,10,A,,0320,1,,,,BQ,0,Chest radiograph,Y,Y,N,N,N
+12001,Simple wound repair ?2.5cm,Procedure charge,ACCT006,,,,11,20,A,,0450,1,,,,BQ,0,Wound repair,Y,Y,N,N,N
+20550,Injection tendon sheath,Procedure charge,ACCT007,,,,11,10,A,,0450,1,,,,BQ,0,Tendon injection,Y,Y,N,N,N
+11730,Removal of nail plate,Procedure charge,ACCT008,,,,11,15,A,,0450,1,,,,BQ,0,Nail removal,Y,Y,N,N,N
+87880,Strep A rapid test,Procedure charge,ACCT009,,,,11,5,A,,0300,1,,,,BQ,0,Rapid strep test,Y,Y,N,N,N
+82962,Glucose blood test,Procedure charge,ACCT010,,,,11,5,A,,0300,1,,,,BQ,0,Glucose fingerstick,Y,Y,N,N,N
+90471,Immunization admin,Procedure charge,ACCT011,,,,11,5,A,,0636,1,,,,BQ,0,Vaccine admin,Y,Y,N,N,N
+90658,Influenza vaccine,Procedure charge,ACCT012,,,,11,5,A,,0636,1,492810,20,ML,BQ,0,Flu vaccine,Y,Y,N,N,N
+29515,Short leg splint,Procedure charge,ACCT013,,,,11,20,A,,0450,1,,,,BQ,0,Leg splint,Y,Y,N,N,N
+73630,Foot X-ray complete,Procedure charge,ACCT014,,,,11,10,A,,0320,1,,,,BQ,0,Foot radiograph,Y,Y,N,N,N
+93010,ECG interpretation only,Procedure charge,ACCT015,,,,11,5,A,,0730,1,,,,BQ,0,ECG interpretation,Y,Y,N,N,N
+99285,ED visit high severity,Procedure charge,ACCT016,,,,23,30,A,,0450,1,,,,BQ,0,Emergency visit,Y,Y,N,N,N
+31500,Emergency intubation,Procedure charge,ACCT017,,,,23,30,A,,0450,1,,,,BQ,0,Endotracheal intubation,Y,Y,N,N,N
+12011,Simple repair face ?2.5cm,Procedure charge,ACCT018,,,,11,20,A,,0450,1,,,,BQ,0,Facial wound repair,Y,Y,N,N,N
+85025,Complete blood count w diff,Procedure charge,ACCT019,,,,11,5,A,,0300,1,,,,BQ,0,CBC with differential,Y,Y,N,N,N
