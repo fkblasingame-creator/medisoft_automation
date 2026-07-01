@@ -62,7 +62,6 @@ def _fill_address_fields(address_type):
     pyautogui.press("tab", presses=2)
     time.sleep(0.5)
 
-    # Set Type dropdown
     type_keys = {
         "attorney":      "a",
         "employer":      "e",
@@ -103,11 +102,11 @@ def _fill_address_fields(address_type):
     print(f"  Address filled: {company_name} ({address_type})")
 
 
-def _fill_employer_f8():
+def _fill_address_f8(address_type):
     """
-    Fill employer address form when opened via F8 from within a case.
+    Shared F8 address fill function for use within a case.
     Cursor starts directly on Name field — no tabs needed to skip Code.
-    Always creates an Employer type address.
+    address_type: 'attorney', 'employer', 'miscellaneous', 'referral'
     """
     fake = Faker()
     company_name = _generate_company_name()
@@ -132,7 +131,13 @@ def _fill_employer_f8():
     pyautogui.press("tab", presses=2)
     time.sleep(0.5)
 
-    pyautogui.press("e")                                # Type = Employer
+    type_keys = {
+        "attorney":      "a",
+        "employer":      "e",
+        "miscellaneous": "m",
+        "referral":      "r",
+    }
+    pyautogui.press(type_keys[address_type])
     time.sleep(0.5)
     pyautogui.press("tab")
 
@@ -163,7 +168,24 @@ def _fill_employer_f8():
     pyautogui.write(fake.word())                        # Extra 2
     pyautogui.press("tab")
 
-    print(f"  Employer created: {company_name}")
+    pyautogui.hotkey("alt", "s")                       # Save
+    time.sleep(3)                                       # Wait for dialog to close
+    print(f"  Address created via F8: {company_name} ({address_type})")
+
+
+def _fill_employer_f8():
+    """Fill employer address form opened via F8."""
+    _fill_address_f8("employer")
+
+
+def _fill_referral_f8():
+    """Fill referral source address form opened via F8."""
+    _fill_address_f8("referral")
+
+
+def _fill_attorney_f8():
+    """Fill attorney address form opened via F8."""
+    _fill_address_f8("attorney")
 
 
 # --- Standalone creation functions (use Lists menu navigation) ---

@@ -107,9 +107,11 @@ if __name__ == "__main__":
 def _fill_provider_f8():
     """
     Fill provider form when opened via F8 from within a case.
-    Uses Faker for random data. Cursor starts on Last Name field.
-    """    
+    Uses Faker for random data. Tab twice to reach Last Name field.
+    """
     fake_local = Faker()
+
+    pyautogui.press("tab", presses=2)                   # Skip to Last Name
 
     fill_field(fake_local.last_name())                  # Last Name
     fill_field(fake_local.first_name())                 # First Name
@@ -124,8 +126,8 @@ def _fill_provider_f8():
     fill_field(fake_local.state_abbr())                 # State
     fill_field(fake_local.email())                      # Email
     fill_field(fake_local.phone_number())               # Office
-    fill_field(fake_local.phone_number())               # Home
     fill_field(fake_local.phone_number())               # Fax
+    fill_field(fake_local.phone_number())               # Home
     fill_field(fake_local.phone_number())               # Cell
 
     pyautogui.press("space")                            # Signature On File
@@ -164,4 +166,3 @@ def _fill_provider_f8():
     pyautogui.hotkey("alt", "s")                       # Save
     time.sleep(2)
     print("  Provider created via F8.")
-
