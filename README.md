@@ -101,7 +101,7 @@ This project follows the **Page Object Model** pattern — the same architecture
 ### Installation
 
 ```bash
-git clone https://github.com/fkblasingame-creator/medisoft-automation.git
+git clone https://github.com/fkblasingame-creator/medisoft_automation
 cd medisoft-automation
 pip install -r requirements.txt
 ```
